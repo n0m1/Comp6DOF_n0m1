@@ -200,7 +200,7 @@ public:
 
 /***********************************************************
  * 
- * magPos
+ * deviantSpread
  *
  * get all axis combos (8) & load array
  * 
