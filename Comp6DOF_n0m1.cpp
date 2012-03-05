@@ -620,7 +620,7 @@ boolean Comp6DOF_n0m1::calOffsets()
       Zdata[k] =  Zdata[6 +m];    
 
       // compute next
-      calSense( const_cast<int *> (Xdata), Ydata, Zdata, Sens, Offset);
+      calSense( Xdata, Ydata, Zdata, Sens, Offset);
       // store the last trust to dtermine if system improves
       lastinvtrust = invtrust;
       // calculate an inverse trust value for data validity
