@@ -1,20 +1,25 @@
-Name    : MMA8453_n0m1 Library                         
-Author  : Noah Shibley, Michael Grant, NoMi Design Ltd. http://n0m1.com                       
-Date    : Feb 1st 2012                                     
-Version : 0.1                                              
-Notes   : Arduino Library for compass tilt compensation and hard iron offset.
-	  Part of this code was ported to C from the Freescale appnote AN4248. 
-	  http://www.freescale.com/files/sensors/doc/app_note/AN4248.pdf 
-	  The sine function comes from Dave Dribin's TrigInt lib. 
-	  https://bitbucket.org/ddribin/trigint
-			
-    Dependencies:	
-	none
-	
-	
-			
-List of Functions:
+Comp6DOF_n0m1
+===========
 
+Arduino Library for compass tilt compensation and hard iron offset.
+
+#### Authors
+* [Noah Shibley](https://github.com/nullboundary)
+* Michael Grant                     
+                                          
+This code was partially ported to C from the Freescale appnote AN4248. http://www.freescale.com/files/sensors/doc/app_note/AN4248.pdf 
+The sine function comes from Dave Dribin's TrigInt lib. 
+https://bitbucket.org/ddribin/trigint
+			
+#### Dependencies: none
+	
+	
+			
+List of Functions
+===========
+
+
+```cpp
 Function: compCompass
 Description: compass compensation calculation
 Parameters: Input raw compass values, xyz, 
@@ -67,3 +72,4 @@ Return: (boolean) return true if avgnum >3
 ------------------------------------------------------ 
 Function: atan2Int
 Parameters: int xInput, int yInput
+```
